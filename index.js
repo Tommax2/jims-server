@@ -22,7 +22,7 @@ cloudinary.config({
 
 app.use(express.json());
 app.use(cors({
-    origin: ['https://jims-touch.onrender.com', 'http://localhost:5174']
+    origin: ['https://jims-touch.onrender.com', 'http://localhost:5174', "https://jims-touch-admin.onrender.com"]
 }));
 
 // Ensure upload directory exists
