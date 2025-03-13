@@ -21,7 +21,9 @@ cloudinary.config({
 });
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: 'https://jims-touch.onrender.com'
+}));
 
 // Ensure upload directory exists
 const uploadDir = path.join(__dirname, 'upload/images');
